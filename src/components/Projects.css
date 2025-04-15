@@ -1,0 +1,29 @@
+/* src/components/Projects.css */
+.projects-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .project-item {
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+  
+  .project-item a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .project-item a:hover {
+    text-decoration: underline;
+  }
+  

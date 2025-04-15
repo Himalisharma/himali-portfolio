@@ -1,0 +1,46 @@
+.certificates-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    scroll-margin-top: 100px;
+  }
+  
+  .certificates-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .certificates-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .certificate-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cert-icon {
+    font-size: 2rem;
+    color: #e0a800;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cert-date {
+    font-style: italic;
+    color: #666;
+  }
+  
