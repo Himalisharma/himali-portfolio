@@ -14,7 +14,14 @@ const About = () => {
     skills through self-learning and academic projects. Highly motivated to apply knowledge in real-world applications
     and collaborate on innovative solutions. Seeking opportunities to grow and gain hands-on experience in the field.
       </p>
-      <a href="/assets/resume.pdf" className="download-button" download>Download Resume</a>
+      <a
+        href={`${import.meta.env.BASE_URL}resume.pdf`}
+        download="Himali_Sharma_Resume.pdf"
+        className="download-button"
+      >
+        Download Resume
+      </a>
+
 
       <h3>🎓 Education</h3>
       <p>Bachelor of Technology in Computer Science</p>
