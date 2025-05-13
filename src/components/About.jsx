@@ -16,7 +16,7 @@ const About = () => {
       </p>
       <a
         href={`${import.meta.env.BASE_URL}resume.pdf`}
-        download="Himali_Sharma_Resume.pdf"
+        download="resume.pdf"
         className="download-button"
       >
         Download Resume
