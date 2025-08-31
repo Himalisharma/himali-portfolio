@@ -55,10 +55,10 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-purple-600" />
                 <a
-                  href="mailto:himalisharma@gmail.com"
+                  href="mailto:himaliisharma@gmail.com"
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                 >
-                  himalisharma@gmail.com
+                  himaliisharma@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -73,7 +73,7 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Linkedin size={16} className="text-purple-600" />
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/himali-sharma"
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                 >
                   LinkedIn

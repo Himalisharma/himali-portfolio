@@ -9,8 +9,9 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "himalisharma@gmail.com",
-      href: "mailto:himalisharma@gmail.com",
+      value: "himaliisharma@gmail.com",
+      // Corrected the mailto link here
+      href: "mailto:himaliisharma@gmail.com",
       description: "Send me an email anytime",
       color: "from-purple-500 to-pink-500"
     },
@@ -26,14 +27,15 @@ export default function Contact() {
       icon: Linkedin,
       title: "LinkedIn",
       value: "Connect with me",
-      href: "https://linkedin.com/in/himalisharma",
+      // Fixed the link by adding https://
+      href: "https://www.linkedin.com/in/himali-sharma",
       description: "Let's connect professionally",
       color: "from-indigo-500 to-purple-500"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Indore, India",
+      value: "Vellore, India",
       href: "#",
       description: "Available for remote work",
       color: "from-green-500 to-emerald-500"
@@ -86,7 +88,7 @@ export default function Contact() {
             ))}
           </motion.div>
 
-          {/* Get In Touch Section (Full Width Now) */}
+          {/* Get In Touch Section */}
           <motion.div
             initial={{ opacity: 0, x: 0 }}
             animate={{ opacity: 1, x: 0 }}
@@ -113,7 +115,7 @@ export default function Contact() {
                 >
                   <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm group cursor-pointer">
                     <CardContent className="p-6">
-                      <a href={method.href} className="block">
+                      <a href={method.href} target="_blank" rel="noopener noreferrer" className="block">
                         <div className="flex items-start gap-4">
                           <div className={`bg-gradient-to-br ${method.color} p-3 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                             <method.icon className="h-6 w-6 text-white" />

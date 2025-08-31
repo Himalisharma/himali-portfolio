@@ -6,40 +6,39 @@ import { Badge } from "@/components/ui/badge"
 import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react"
 
 export default function WorkExperience() {
+  // Array updated to remove the two incorrect experiences and update the date for the Sudofire internship.
   const workExperience = [
     {
-      title: "Web Development Intern",
-      company: "Tech Solutions Inc.",
-      location: "San Francisco, CA",
-      duration: "May 2023 - Aug 2023",
+      title: "Backend Developer Intern",
+      company: "Sudofire Technology",
+      location: "Remote",
+      duration: "May 2025 - June 2025", // Year updated to 2025
       type: "Internship",
       description:
-        "Worked on developing responsive web applications using React and Node.js. Collaborated with a team of developers to implement new features and fix bugs. Gained hands-on experience in full-stack development and agile methodologies.",
-      skills: ["React", "Node.js", "MongoDB", "Git"],
+        "Architected and developed a full-featured web application from scratch using the Django framework. I was responsible for designing the database schema, implementing core backend logic, and building RESTful APIs to support the application's functionality.",
+      skills: ["Django", "Python", "REST APIs", "PostgreSQL", "Git"],
       achievements: [
-        "Improved application load time by 40% through code optimization",
-        "Contributed to 3 major feature releases",
-        "Mentored 2 junior interns"
+        "Successfully built and deployed a complete web application from the ground up within the internship period.",
+        "Designed and implemented a scalable database schema to handle application data efficiently.",
+        "Developed secure user authentication and authorization systems."
       ]
     },
     {
-      title: "Frontend Developer (Part-time)",
-      company: "Creative Designs",
-      location: "Remote",
-      duration: "Jan 2023 - Apr 2023",
-      type: "Part-time",
+      title: "Volunteer, Publicity & Marketing",
+      company: "VIT Vellore College Fest",
+      location: "VIT Vellore",
+      duration: "Feb 2024 - Mar 2024",
+      type: "Volunteer",
       description:
-        "Designed and implemented user interfaces for client websites. Worked closely with designers to ensure pixel-perfect implementation of designs. Specialized in creating responsive and accessible web experiences.",
-      skills: ["HTML/CSS", "JavaScript", "Figma", "Responsive Design"],
+        "Collaborated with a large team to promote the annual college cultural fest. My responsibilities included managing social media campaigns, creating promotional content, and coordinating outreach efforts across the campus to maximize event attendance.",
+      skills: ["Marketing", "Social Media Management", "Team Collaboration", "Event Promotion"],
       achievements: [
-        "Delivered 5+ client projects on time",
-        "Achieved 98% design-to-code accuracy",
-        "Implemented accessibility improvements"
+        "Contributed to a significant increase in event participation through targeted digital marketing.",
+        "Fostered strong teamwork and communication within a fast-paced environment.",
+        "Enhanced my organizational and public relations skills."
       ]
     },
   ]
-
-  const totalExperience = "8+ months"
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900/20">
@@ -60,7 +59,7 @@ export default function WorkExperience() {
               Work Experience
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              My professional journey spanning <span className="font-semibold text-purple-600">{totalExperience}</span> of hands-on experience in web development and frontend technologies.
+              A collection of my professional roles and volunteer activities that have shaped my skills in development, marketing, and teamwork.
             </p>
           </motion.div>
 
@@ -165,7 +164,7 @@ export default function WorkExperience() {
                   </p>
                   <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
                     <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-white font-medium text-lg">himalisharma@gmail.com</span>
+                    <span className="text-white font-medium text-lg">himaliisharma@gmail.com</span>
                   </div>
                 </div>
               </CardContent>

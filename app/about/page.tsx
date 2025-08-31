@@ -5,9 +5,11 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Download, GraduationCap, Heart, Sparkles, MapPin, Code, Camera, Music, BookOpen, Plane, Brain } from "lucide-react"
+// Updated icons: Removed BookOpen, Camera and added Github, Mic
+import { Download, GraduationCap, Heart, Sparkles, MapPin, Code, Plane, Brain, Music, Github, Mic } from "lucide-react"
 
 export default function About() {
+  // Replaced 'Reading' and 'Photography' with 'Open Source' and 'Tech Podcasts'
   const interests = [
     { 
       title: "Web Development", 
@@ -22,16 +24,16 @@ export default function About() {
       color: "from-purple-500 to-pink-500"
     },
     { 
-      title: "Reading", 
-      description: "Books on technology, science fiction, and personal development",
-      icon: BookOpen,
-      color: "from-green-500 to-emerald-500"
+      title: "Open Source", 
+      description: "Contributing to open source projects and collaborating with the community",
+      icon: Github, // New Icon
+      color: "from-gray-600 to-gray-800"
     },
     { 
-      title: "Photography", 
-      description: "Capturing moments, landscapes, and the beauty in everyday life",
-      icon: Camera,
-      color: "from-orange-500 to-red-500"
+      title: "Tech Podcasts", 
+      description: "Staying updated with the latest trends by listening to tech podcasts",
+      icon: Mic, // New Icon
+      color: "from-yellow-500 to-amber-500"
     },
     { 
       title: "Music", 
@@ -99,50 +101,50 @@ export default function About() {
         </motion.div>
 
         {/* Main Content Section (full-width now) */}
-<motion.div
-  initial={{ opacity: 0, x: 0 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.8, delay: 0.2 }}
-  className="max-w-3xl mx-auto mb-6"
->
-  <div className="space-y-6">
-    <div className="space-y-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-        Himali <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Sharma</span>
-      </h2>
-      <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
-        <GraduationCap className="h-5 w-5 text-purple-600" />
-        <span className="font-medium">Computer Science Student at VIT Vellore</span>
-      </div>
-    </div>
+        <motion.div
+          initial={{ opacity: 0, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-3xl mx-auto mb-6"
+        >
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                Himali <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Sharma</span>
+              </h2>
+              <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+                <GraduationCap className="h-5 w-5 text-purple-600" />
+                <span className="font-medium">Computer Science Student at VIT Vellore</span>
+              </div>
+            </div>
 
-    <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
-      <p className="text-lg">
-        I am a passionate Computer Science student at VIT Vellore, driven by an insatiable curiosity about technology and its potential to solve real-world problems. My journey began with a simple question: <em>"How can we use code to make life better?"</em>
-      </p>
-      <p>
-        Throughout my academic journey, I've immersed myself in various programming languages and cutting-edge technologies. Each project I undertake is an opportunity to push boundaries, learn something new, and contribute to the ever-evolving world of software development.
-      </p>
-      <p>
-        I believe in the power of continuous learning and collaboration. Whether it's building responsive web applications, exploring machine learning algorithms, or contributing to open-source projects, I approach each challenge with enthusiasm and dedication.
-      </p>
-    </div>
+            <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-lg">
+                I am a passionate Computer Science student at VIT Vellore, driven by an insatiable curiosity about technology and its potential to solve real-world problems. My journey began with a simple question: <em>"How can we use code to make life better?"</em>
+              </p>
+              <p>
+                Throughout my academic journey, I've immersed myself in various programming languages and cutting-edge technologies. Each project I undertake is an opportunity to push boundaries, learn something new, and contribute to the ever-evolving world of software development.
+              </p>
+              <p>
+                I believe in the power of continuous learning and collaboration. Whether it's building responsive web applications, exploring machine learning algorithms, or contributing to open-source projects, I approach each challenge with enthusiasm and dedication.
+              </p>
+            </div>
 
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-    <Button 
-      asChild 
-      size="lg"
-      className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-    >
-      <Link href="/resume.pdf" download className="flex items-center gap-2">
-        <Download className="h-5 w-5" /> 
-        Download Resume
-        <Sparkles className="h-4 w-4 ml-1" />
-      </Link>
-    </Button>
-    </motion.div>
-  </div>
-</motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Button 
+              asChild 
+              size="lg"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <Link href="/Himali_Sharma_Resume.pdf" download className="flex items-center gap-2">
+                <Download className="h-5 w-5" /> 
+                Download Resume
+                <Sparkles className="h-4 w-4 ml-1" />
+              </Link>
+            </Button>
+            </motion.div>
+          </div>
+        </motion.div>
 
         
         {/* Education Section */}
@@ -173,7 +175,8 @@ export default function About() {
                   <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-6 rounded-xl">
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">B.Tech in Computer Science</h3>
                     <p className="text-lg font-semibold text-purple-600 mb-1">VIT Vellore</p>
-                    <p className="text-gray-500 dark:text-gray-400 mb-3 font-medium">2020 - 2024</p>
+                    {/* Changed the years here */}
+                    <p className="text-gray-500 dark:text-gray-400 mb-3 font-medium">2023 - 2027</p>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                       Pursuing comprehensive education in core computer science subjects including Data Structures & Algorithms, 
                       Database Management Systems, Software Engineering, Machine Learning, and Web Technologies. Actively 
@@ -181,26 +184,9 @@ export default function About() {
                     </p>
                   </div>
                 </motion.div>
+                
+                {/* I have removed the "Higher Secondary Education" section from here */}
 
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 1 }}
-                  className="relative pl-8 border-l-4 border-gradient-to-b from-purple-600 to-blue-600"
-                  style={{ borderImage: 'linear-gradient(to bottom, rgb(147, 51, 234), rgb(37, 99, 235)) 1' }}
-                >
-                  <div className="absolute -left-3 top-0 w-6 h-6 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full shadow-lg"></div>
-                  <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-6 rounded-xl">
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Higher Secondary Education</h3>
-                    <p className="text-lg font-semibold text-purple-600 mb-1">Senior Secondary School</p>
-                    <p className="text-gray-500 dark:text-gray-400 mb-3 font-medium">2018 - 2020</p>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                      Completed higher secondary education with exceptional performance in Mathematics, Physics, and Computer Science. 
-                      Developed foundational programming skills and logical thinking abilities that paved the way for my 
-                      computer science journey.
-                    </p>
-                  </div>
-                </motion.div>
               </div>
             </CardContent>
           </Card>
